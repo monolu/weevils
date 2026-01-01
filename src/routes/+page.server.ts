@@ -10,7 +10,8 @@ const getCurrentWednesday = () => {
   return wednesday;
 };
 
-export const load = async ({ locals: { safeGetSession, supabase } }) => {
+export const load = async ({ locals: { safeGetSession, supabase }, depends }) => {
+  depends('supabase:auth');
   const { session } = await safeGetSession();
   const currentWed = getCurrentWednesday();
 

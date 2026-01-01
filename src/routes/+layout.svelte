@@ -55,7 +55,7 @@
 
 			<button 
 				onclick={() => supabase.auth.signOut()} 
-				class="text-xs bg-gray-800 hover:bg-red-900/50 border border-gray-700 hover:border-red-500 px-3 py-1 rounded transition-colors ml-2 cursor-pointer"
+				class="bg-gray-800 hover:bg-red-900/80 text-gray-200 hover:text-white border border-gray-700 hover:border-red-500 px-4 py-2 rounded font-bold text-sm transition-all ml-2 shadow-lg hover:shadow-red-500/20 cursor-pointer"
 			>
 				Sign Out
 			</button>
