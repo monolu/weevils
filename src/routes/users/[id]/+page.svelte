@@ -58,7 +58,7 @@
   {/if}
   
   <div class="mt-12">
-    <a href="/" class="text-gray-500 hover:text-white transition-colors">← Back to the hunt</a>
+    <a href="/" class="text-gray-500 hover:text-white transition-colors">← Back</a>
   </div>
 
   {#if selectedEntry}
