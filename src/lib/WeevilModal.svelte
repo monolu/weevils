@@ -39,7 +39,7 @@
         <img src={entry.weevils.image_url} alt={entry.weevils.name} class="w-48 h-48 object-contain mx-auto drop-shadow-glow" />
       </div>
       
-      <h3 class="text-left text-sm font-bold text-gray-400 mb-2 uppercase tracking-wider">Specimen Stats</h3>
+      <h3 class="text-left text-sm font-bold text-gray-400 mb-2 uppercase tracking-wider">Stats</h3>
       <div class="grid grid-cols-2 gap-3">
           {#if entry.weevils.stats && Object.keys(entry.weevils.stats).length > 0}
             {#each Object.entries(entry.weevils.stats) as [key, val]}
