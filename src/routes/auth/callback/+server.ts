@@ -4,9 +4,6 @@ export const GET = async ({ url, locals: { supabase } }) => {
   const code = url.searchParams.get('code')
   const next = url.searchParams.get('next') ?? '/'
 
-  console.log('--- CALLBACK HIT ---')
-  console.log('URL Params:', url.searchParams.toString())
-
   if (code) {
     const { error } = await supabase.auth.exchangeCodeForSession(code)
     if (!error) {

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '../app.css'; // <--- ADD THIS LINE
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { supabase } from '$lib/supabaseClient';
@@ -23,7 +24,7 @@
 </svelte:head>
 
 <nav class="p-4 border-b flex justify-between">
-	<a href="/" class="font-bold">Weevil Wednesday</a>
+	<a href="/" class="font-bold">weevils</a>
 	{#if session}
 		<div class="flex gap-4">
 			<span>Sup, {session.user.email}</span>
