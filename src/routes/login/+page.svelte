@@ -14,7 +14,7 @@
 </script>
 
 <div class="flex flex-col items-center justify-center h-screen">
-  <button on:click={signIn} class="bg-indigo-600 text-white p-4 rounded-xl font-bold">
-    Login with Discord
+  <button onclick={signIn} class="bg-indigo-600 text-white p-4 rounded-xl font-bold cursor-pointer">
+    Sign In with Discord
   </button>
 </div>
